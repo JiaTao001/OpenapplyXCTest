@@ -14,6 +14,18 @@
 		B79899772B91B11500D078A8 /* OAXCTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899762B91B11500D078A8 /* OAXCTestTests.swift */; };
 		B79899812B91B11500D078A8 /* OAXCTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899802B91B11500D078A8 /* OAXCTestUITests.swift */; };
 		B79899832B91B11500D078A8 /* OAXCTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899822B91B11500D078A8 /* OAXCTestUITestsLaunchTests.swift */; };
+		B79899A92B9ED60B00D078A8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79899A82B9ED60B00D078A8 /* WidgetKit.framework */; };
+		B79899AB2B9ED60B00D078A8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79899AA2B9ED60B00D078A8 /* SwiftUI.framework */; };
+		B79899AE2B9ED60B00D078A8 /* PushActivityWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899AD2B9ED60B00D078A8 /* PushActivityWidgetBundle.swift */; };
+		B79899B02B9ED60B00D078A8 /* PushActivityWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899AF2B9ED60B00D078A8 /* PushActivityWidgetLiveActivity.swift */; };
+		B79899B22B9ED60B00D078A8 /* PushActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899B12B9ED60B00D078A8 /* PushActivityWidget.swift */; };
+		B79899B42B9ED60B00D078A8 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899B32B9ED60B00D078A8 /* AppIntent.swift */; };
+		B79899B62B9ED60D00D078A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79899B52B9ED60D00D078A8 /* Assets.xcassets */; };
+		B79899BA2B9ED60D00D078A8 /* PushActivityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B79899A62B9ED60B00D078A8 /* PushActivityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B79899C02B9ED8B400D078A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899662B91B11300D078A8 /* ContentView.swift */; };
+		B79899C42B9EDA4B00D078A8 /* PushActivityWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899AF2B9ED60B00D078A8 /* PushActivityWidgetLiveActivity.swift */; };
+		B79899C52B9EDA4E00D078A8 /* PushActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899B12B9ED60B00D078A8 /* PushActivityWidget.swift */; };
+		B79899C62B9EDA5100D078A8 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79899B32B9ED60B00D078A8 /* AppIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +43,28 @@
 			remoteGlobalIDString = B79899602B91B11300D078A8;
 			remoteInfo = OAXCTest;
 		};
+		B79899B82B9ED60D00D078A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B79899592B91B11300D078A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B79899A52B9ED60B00D078A8;
+			remoteInfo = PushActivityWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B79899BB2B9ED60D00D078A8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B79899BA2B9ED60D00D078A8 /* PushActivityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B79899612B91B11300D078A8 /* OAXCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAXCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +78,16 @@
 		B798997C2B91B11500D078A8 /* OAXCTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAXCTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79899802B91B11500D078A8 /* OAXCTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAXCTestUITests.swift; sourceTree = "<group>"; };
 		B79899822B91B11500D078A8 /* OAXCTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAXCTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B79899A62B9ED60B00D078A8 /* PushActivityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushActivityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79899A82B9ED60B00D078A8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B79899AA2B9ED60B00D078A8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B79899AD2B9ED60B00D078A8 /* PushActivityWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushActivityWidgetBundle.swift; sourceTree = "<group>"; };
+		B79899AF2B9ED60B00D078A8 /* PushActivityWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushActivityWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		B79899B12B9ED60B00D078A8 /* PushActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushActivityWidget.swift; sourceTree = "<group>"; };
+		B79899B32B9ED60B00D078A8 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		B79899B52B9ED60D00D078A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B79899B72B9ED60D00D078A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B79899BF2B9ED6D300D078A8 /* PushActivityWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushActivityWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +112,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B79899A32B9ED60B00D078A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B79899AB2B9ED60B00D078A8 /* SwiftUI.framework in Frameworks */,
+				B79899A92B9ED60B00D078A8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B79899582B91B11300D078A8 = {
 			isa = PBXGroup;
 			children = (
+				B79899BF2B9ED6D300D078A8 /* PushActivityWidgetExtension.entitlements */,
 				B79899632B91B11300D078A8 /* OAXCTest */,
 				B79899752B91B11500D078A8 /* OAXCTestTests */,
 				B798997F2B91B11500D078A8 /* OAXCTestUITests */,
+				B79899AC2B9ED60B00D078A8 /* PushActivityWidget */,
+				B79899A72B9ED60B00D078A8 /* Frameworks */,
 				B79899622B91B11300D078A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +143,7 @@
 				B79899612B91B11300D078A8 /* OAXCTest.app */,
 				B79899722B91B11500D078A8 /* OAXCTestTests.xctest */,
 				B798997C2B91B11500D078A8 /* OAXCTestUITests.xctest */,
+				B79899A62B9ED60B00D078A8 /* PushActivityWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +185,28 @@
 			path = OAXCTestUITests;
 			sourceTree = "<group>";
 		};
+		B79899A72B9ED60B00D078A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B79899A82B9ED60B00D078A8 /* WidgetKit.framework */,
+				B79899AA2B9ED60B00D078A8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B79899AC2B9ED60B00D078A8 /* PushActivityWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B79899AD2B9ED60B00D078A8 /* PushActivityWidgetBundle.swift */,
+				B79899AF2B9ED60B00D078A8 /* PushActivityWidgetLiveActivity.swift */,
+				B79899B12B9ED60B00D078A8 /* PushActivityWidget.swift */,
+				B79899B32B9ED60B00D078A8 /* AppIntent.swift */,
+				B79899B52B9ED60D00D078A8 /* Assets.xcassets */,
+				B79899B72B9ED60D00D078A8 /* Info.plist */,
+			);
+			path = PushActivityWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +217,12 @@
 				B798995D2B91B11300D078A8 /* Sources */,
 				B798995E2B91B11300D078A8 /* Frameworks */,
 				B798995F2B91B11300D078A8 /* Resources */,
+				B79899BB2B9ED60D00D078A8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B79899B92B9ED60D00D078A8 /* PBXTargetDependency */,
 			);
 			name = OAXCTest;
 			productName = OAXCTest;
@@ -185,6 +265,23 @@
 			productReference = B798997C2B91B11500D078A8 /* OAXCTestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B79899A52B9ED60B00D078A8 /* PushActivityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B79899BE2B9ED60D00D078A8 /* Build configuration list for PBXNativeTarget "PushActivityWidgetExtension" */;
+			buildPhases = (
+				B79899A22B9ED60B00D078A8 /* Sources */,
+				B79899A32B9ED60B00D078A8 /* Frameworks */,
+				B79899A42B9ED60B00D078A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushActivityWidgetExtension;
+			productName = PushActivityWidgetExtension;
+			productReference = B79899A62B9ED60B00D078A8 /* PushActivityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +303,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = B79899602B91B11300D078A8;
 					};
+					B79899A52B9ED60B00D078A8 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = B798995C2B91B11300D078A8 /* Build configuration list for PBXProject "OAXCTest" */;
@@ -224,6 +324,7 @@
 				B79899602B91B11300D078A8 /* OAXCTest */,
 				B79899712B91B11500D078A8 /* OAXCTestTests */,
 				B798997B2B91B11500D078A8 /* OAXCTestUITests */,
+				B79899A52B9ED60B00D078A8 /* PushActivityWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +353,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B79899A42B9ED60B00D078A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B79899B62B9ED60D00D078A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,7 +369,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79899672B91B11300D078A8 /* ContentView.swift in Sources */,
+				B79899C42B9EDA4B00D078A8 /* PushActivityWidgetLiveActivity.swift in Sources */,
+				B79899C52B9EDA4E00D078A8 /* PushActivityWidget.swift in Sources */,
 				B79899652B91B11300D078A8 /* OAXCTestApp.swift in Sources */,
+				B79899C62B9EDA5100D078A8 /* AppIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +393,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B79899A22B9ED60B00D078A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B79899AE2B9ED60B00D078A8 /* PushActivityWidgetBundle.swift in Sources */,
+				B79899C02B9ED8B400D078A8 /* ContentView.swift in Sources */,
+				B79899B42B9ED60B00D078A8 /* AppIntent.swift in Sources */,
+				B79899B02B9ED60B00D078A8 /* PushActivityWidgetLiveActivity.swift in Sources */,
+				B79899B22B9ED60B00D078A8 /* PushActivityWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +417,11 @@
 			isa = PBXTargetDependency;
 			target = B79899602B91B11300D078A8 /* OAXCTest */;
 			targetProxy = B798997D2B91B11500D078A8 /* PBXContainerItemProxy */;
+		};
+		B79899B92B9ED60D00D078A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B79899A52B9ED60B00D078A8 /* PushActivityWidgetExtension */;
+			targetProxy = B79899B82B9ED60D00D078A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,6 +543,7 @@
 		B79899872B91B11500D078A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OAXCTest/OAXCTest.entitlements;
@@ -424,6 +554,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,12 +565,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fariaedu.openapply.OAXCTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fariaedu.openapply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -452,6 +583,7 @@
 		B79899882B91B11500D078A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OAXCTest/OAXCTest.entitlements;
@@ -462,6 +594,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,12 +605,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fariaedu.openapply.OAXCTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fariaedu.openapply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -577,6 +710,69 @@
 			};
 			name = Release;
 		};
+		B79899BC2B9ED60D00D078A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PushActivityWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7J5Z492J2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fariaedu.openapply.PushActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B79899BD2B9ED60D00D078A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PushActivityWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7J5Z492J2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PushActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PushActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fariaedu.openapply.PushActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -612,6 +808,15 @@
 			buildConfigurations = (
 				B798998D2B91B11500D078A8 /* Debug */,
 				B798998E2B91B11500D078A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B79899BE2B9ED60D00D078A8 /* Build configuration list for PBXNativeTarget "PushActivityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B79899BC2B9ED60D00D078A8 /* Debug */,
+				B79899BD2B9ED60D00D078A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
