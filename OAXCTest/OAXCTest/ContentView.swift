@@ -7,6 +7,8 @@
 
 import SwiftUI
 import ActivityKit
+import Alamofire
+
 
 struct ContentView: View {
     var body: some View {
@@ -28,6 +30,7 @@ struct ContentView: View {
         }
         .padding()
     }
+ 
     
     // 启动 Live Activity
     func startActivity() {
@@ -41,7 +44,6 @@ struct ContentView: View {
 //            uploadTokenToService(nil)
             return
         }
-        
         // 创建数据
         let pizzaDeliveryAttributes = PushActivityWidgetAttributes(name: "World")
         let initialContentState = PushActivityWidgetAttributes.ContentState(emoji: "🤩")
