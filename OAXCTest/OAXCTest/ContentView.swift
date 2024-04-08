@@ -7,7 +7,7 @@
 
 import SwiftUI
 import ActivityKit
-import Alamofire
+//import Alamofire
 
 
 struct ContentView: View {
