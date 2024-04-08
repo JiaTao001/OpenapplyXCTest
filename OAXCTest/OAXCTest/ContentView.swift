@@ -81,6 +81,7 @@ struct ContentView: View {
                     // .ended 已经终止且不会有任何更新，但依旧在锁屏界面展示
                     // .dismissed 结束且不再展示
                     // .stale 消息过时，等待最新的消息。(iOS 16.2 以上才支持)
+                    //
                     if state == .ended || state == .dismissed {
 //                        uploadTokenToService(nil)
                     }
